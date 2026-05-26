@@ -11,7 +11,7 @@ class Differ < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/dpuwork/differ/releases/download/v2.2.0/differ_darwin_amd64.tar.gz"
-      sha256 "a4e32f9e43ac6f023b43274b0fa85ef26e11bbc8c69319fa14afebd682039e9c"
+      sha256 "c3c2b79ff8f0bd273715f0ad8ce59185cb0ce15f6bb873cc1acefc5c7fd963b2"
 
       define_method(:install) do
         bin.install "differ"
@@ -19,7 +19,7 @@ class Differ < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/dpuwork/differ/releases/download/v2.2.0/differ_darwin_arm64.tar.gz"
-      sha256 "d7446997fd50fb70ea53d6e5184260325130b383ca4b37185301855e82c9b2b1"
+      sha256 "df8f4455c7210046cae797538d07c2e66a6d4e5a101140acea0f42c858103dab"
 
       define_method(:install) do
         bin.install "differ"
@@ -30,14 +30,14 @@ class Differ < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/dpuwork/differ/releases/download/v2.2.0/differ_linux_amd64.tar.gz"
-      sha256 "f3066fa8bfd47aa613906a7a14ecadd28bda4f1835e247ba7220f4a8469ce1f4"
+      sha256 "62261e3712e5cfbf0f3306ec2fa91064d16b161f189b6722084c4c7470a2403d"
       define_method(:install) do
         bin.install "differ"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/dpuwork/differ/releases/download/v2.2.0/differ_linux_arm64.tar.gz"
-      sha256 "24bc194aa399f1d5e68d2110815f088e39afdf06d26af204a815a4a814856489"
+      sha256 "72d31fdd6decca4525b6ecd52d0587aef68e7142bd655d9fbac5b923642972d0"
       define_method(:install) do
         bin.install "differ"
       end
