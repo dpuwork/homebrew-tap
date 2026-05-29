@@ -5,40 +5,40 @@
 class Dumb < Formula
   desc "tmux dumb - a layout helper for tmux"
   homepage "https://github.com/dpuwork/dumb"
-  version "0.1.6"
+  version "0.1.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dpuwork/dumb/releases/download/v0.1.6/dumb_v0.1.6_darwin_amd64.tar.gz"
-      sha256 "2c0bbd90cd3bc5466f1d354cf02d53a286fc327ac14b724d6c7236e3b06d07ff"
+      url "https://github.com/dpuwork/dumb/releases/download/v0.1.7/dumb_v0.1.7_darwin_amd64.tar.gz"
+      sha256 "146988846f52848eddda4da6c15e4bb341b6d64f55af966578cdc0167b7217e6"
 
       define_method(:install) do
-        bin.install "bin/dumb" => "dumb"
+        bin.install "dumb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dpuwork/dumb/releases/download/v0.1.6/dumb_v0.1.6_darwin_arm64.tar.gz"
-      sha256 "3cebce9a416e70380954821dcd8909623dfca2a7730780188cfca4f34282359c"
+      url "https://github.com/dpuwork/dumb/releases/download/v0.1.7/dumb_v0.1.7_darwin_arm64.tar.gz"
+      sha256 "7511bee590bbd85468fe5b9611963ec25ff30fd404599e31a7a186dd48c7919e"
 
       define_method(:install) do
-        bin.install "bin/dumb" => "dumb"
+        bin.install "dumb"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dpuwork/dumb/releases/download/v0.1.6/dumb_v0.1.6_linux_amd64.tar.gz"
-      sha256 "cc2a05f39bc9629b477695f72f8201fcd860a0e698eef6d8edc6ca0dda6158bd"
+      url "https://github.com/dpuwork/dumb/releases/download/v0.1.7/dumb_v0.1.7_linux_amd64.tar.gz"
+      sha256 "8c1f7e30038570d30710fef3b0d763dfb689a27c5d49ecebe4720dd94ab53bd5"
       define_method(:install) do
-        bin.install "bin/dumb" => "dumb"
+        bin.install "dumb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dpuwork/dumb/releases/download/v0.1.6/dumb_v0.1.6_linux_arm64.tar.gz"
-      sha256 "1c3d788b2719fd7547b0f915ae3cf8740e74364e85008db0b283a3438f405f1e"
+      url "https://github.com/dpuwork/dumb/releases/download/v0.1.7/dumb_v0.1.7_linux_arm64.tar.gz"
+      sha256 "716d96f35fcb52ef189384ef6c2e1aec0cb84431780fcc3b2cf227df797ad175"
       define_method(:install) do
-        bin.install "bin/dumb" => "dumb"
+        bin.install "dumb"
       end
     end
   end
