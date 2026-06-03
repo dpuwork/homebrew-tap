@@ -5,21 +5,21 @@
 class Differ < Formula
   desc "Terminal UI git diff viewer"
   homepage "https://github.com/dpuwork/differ"
-  version "2.5.2"
+  version "2.5.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dpuwork/differ/releases/download/v2.5.2/differ_darwin_amd64.tar.gz"
-      sha256 "bc665ce5bb6c6ed6716f247316cc213f6ddbfb3494bbb4d2c86d74152e4f49fb"
+      url "https://github.com/dpuwork/differ/releases/download/v2.5.3/differ_darwin_amd64.tar.gz"
+      sha256 "aa9b47c049e97809d0c9e3b18c938d9c282a4b28158f67a982c1cb2946a5dcc1"
 
       define_method(:install) do
         bin.install "differ"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dpuwork/differ/releases/download/v2.5.2/differ_darwin_arm64.tar.gz"
-      sha256 "1db53818413a61b37999e3a618eca0563d3424e3d4ab36f9ae02d9e83648b9f1"
+      url "https://github.com/dpuwork/differ/releases/download/v2.5.3/differ_darwin_arm64.tar.gz"
+      sha256 "6b1d293074846bdb2c35faf13f4ce8056e4864a327dabf5cd0aad32ee5a1bb23"
 
       define_method(:install) do
         bin.install "differ"
@@ -29,15 +29,15 @@ class Differ < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dpuwork/differ/releases/download/v2.5.2/differ_linux_amd64.tar.gz"
-      sha256 "51fb13bb42e18d6018672bc23022292942305758c76598e4670f320e59560238"
+      url "https://github.com/dpuwork/differ/releases/download/v2.5.3/differ_linux_amd64.tar.gz"
+      sha256 "3804d08f51309e29c1340d69d11e5caae1388b245c23a35943fc29683df1efde"
       define_method(:install) do
         bin.install "differ"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dpuwork/differ/releases/download/v2.5.2/differ_linux_arm64.tar.gz"
-      sha256 "2e4e2e5b19f87f07bb9d48d049b4ba8d55907cd06ef9b99e98a1a26b317a70f1"
+      url "https://github.com/dpuwork/differ/releases/download/v2.5.3/differ_linux_arm64.tar.gz"
+      sha256 "c917c0eecba4e565d751b699a5659e0f65ca96a385e2dfa5a960c01651680e76"
       define_method(:install) do
         bin.install "differ"
       end
