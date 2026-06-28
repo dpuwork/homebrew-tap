@@ -5,20 +5,20 @@
 class Dumb < Formula
   desc "tmux dumb - a layout helper for tmux"
   homepage "https://github.com/dpuwork/dumb"
-  version "0.1.7"
+  version "0.1.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dpuwork/dumb/releases/download/v0.1.7/dumb_v0.1.7_darwin_amd64.tar.gz"
-      sha256 "146988846f52848eddda4da6c15e4bb341b6d64f55af966578cdc0167b7217e6"
+      url "https://github.com/dpuwork/dumb/releases/download/v0.1.8/dumb_v0.1.8_darwin_amd64.tar.gz"
+      sha256 "6b0767ecc0b34ba4bd3b458a368e1f1e4da14d24e1d6c6449770b1b960b6057a"
 
       define_method(:install) do
         bin.install "dumb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dpuwork/dumb/releases/download/v0.1.7/dumb_v0.1.7_darwin_arm64.tar.gz"
-      sha256 "7511bee590bbd85468fe5b9611963ec25ff30fd404599e31a7a186dd48c7919e"
+      url "https://github.com/dpuwork/dumb/releases/download/v0.1.8/dumb_v0.1.8_darwin_arm64.tar.gz"
+      sha256 "7d398848dcb203ecb52fb6a0c43fe65030165232367b8cd5a074f2a61c491f71"
 
       define_method(:install) do
         bin.install "dumb"
@@ -28,15 +28,15 @@ class Dumb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dpuwork/dumb/releases/download/v0.1.7/dumb_v0.1.7_linux_amd64.tar.gz"
-      sha256 "8c1f7e30038570d30710fef3b0d763dfb689a27c5d49ecebe4720dd94ab53bd5"
+      url "https://github.com/dpuwork/dumb/releases/download/v0.1.8/dumb_v0.1.8_linux_amd64.tar.gz"
+      sha256 "645d6cec5c8d45b4061c5c07069bf49cc2a1361ce53c93b130d7cd65b22e1a50"
       define_method(:install) do
         bin.install "dumb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dpuwork/dumb/releases/download/v0.1.7/dumb_v0.1.7_linux_arm64.tar.gz"
-      sha256 "716d96f35fcb52ef189384ef6c2e1aec0cb84431780fcc3b2cf227df797ad175"
+      url "https://github.com/dpuwork/dumb/releases/download/v0.1.8/dumb_v0.1.8_linux_arm64.tar.gz"
+      sha256 "1b27f03ce0737ecf31aac670b51a97d1082c898b6fd0f66cd91d3df884de21cd"
       define_method(:install) do
         bin.install "dumb"
       end
