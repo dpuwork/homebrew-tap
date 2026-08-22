@@ -5,20 +5,20 @@
 class Aitop < Formula
   desc "TUI for AI coding tool usage: Claude Code, OpenCode Go, Codex"
   homepage "https://github.com/dpuwork/aitop"
-  version "0.1.5"
+  version "0.1.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dpuwork/aitop/releases/download/v0.1.5/aitop_darwin_amd64.tar.gz"
-      sha256 "af3b18ae63c96400a4c45999d97e824d2c25875b552cd55904a5961dfd7e8a7c"
+      url "https://github.com/dpuwork/aitop/releases/download/v0.1.6/aitop_darwin_amd64.tar.gz"
+      sha256 "0d3cb8e86c554868c4e63b7e116be3a8fcd253ff706794ec27c0807880a026a5"
 
       define_method(:install) do
         bin.install "aitop"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dpuwork/aitop/releases/download/v0.1.5/aitop_darwin_arm64.tar.gz"
-      sha256 "2685ae2ca91299d1abe360a3ab2e03a42e0aa78a54fac4c0bd45ae7f47ac18a3"
+      url "https://github.com/dpuwork/aitop/releases/download/v0.1.6/aitop_darwin_arm64.tar.gz"
+      sha256 "19157fb4309fa9b54b2c4ba2ddf90c981b5aee6451da23b94d3c92eaf63d42a2"
 
       define_method(:install) do
         bin.install "aitop"
@@ -28,15 +28,15 @@ class Aitop < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dpuwork/aitop/releases/download/v0.1.5/aitop_linux_amd64.tar.gz"
-      sha256 "5a16a6e68201064ec497f252f7bb4cecb304f3f61e9cc72416ae5f62bb828b98"
+      url "https://github.com/dpuwork/aitop/releases/download/v0.1.6/aitop_linux_amd64.tar.gz"
+      sha256 "2b14a84e0a110f2ce7e488ab1d4201f6ac3ffc5acd7afeb624cb909e83ee6f3c"
       define_method(:install) do
         bin.install "aitop"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dpuwork/aitop/releases/download/v0.1.5/aitop_linux_arm64.tar.gz"
-      sha256 "06ef513d021a25194d3275423c09d611d31cb3ef9d222a285f8cbe00b42d6913"
+      url "https://github.com/dpuwork/aitop/releases/download/v0.1.6/aitop_linux_arm64.tar.gz"
+      sha256 "9a8784ddac60c8c139f56d72969d9f7af839b10fb1e4734c0c289aab4d4b8304"
       define_method(:install) do
         bin.install "aitop"
       end
